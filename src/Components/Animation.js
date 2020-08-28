@@ -21,8 +21,8 @@ const  Animation = () => {
             <div className="earth">
                 <QueenAlice playFast={playFast} />
             </div>
-            <Palm />
-            <PalmRooks />
+            <Palm playFast={playFast} />
+            <PalmRooks playFast={playFast} />
             <ChessPieces playFast={playFast} />
             <ChessBackground playFast={playFast} />
         </div>
