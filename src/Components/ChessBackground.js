@@ -1,9 +1,24 @@
 import React from 'react'
 import useWebAnimations from "@wellyshen/use-web-animations";
 
-function ChessBackground() {
+function ChessBackground({ playFast }) {
+
+    const { ref, getAnimation } = useWebAnimations({
+        keyframes: [
+            { transform: "translateX(100%)" },
+            { transform: "translateX(-100%)" }
+        ],
+        timing: {
+            duration: 36000,
+            iterations: Infinity,
+            playbackRate: 1
+        }
+    })
+
+    playFast(getAnimation)
+
     return (
-        <div className="scenery">
+        <div className="scenery" ref={ref} >
             <img 
                 className="pawn" 
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/r_pawn_small.png"

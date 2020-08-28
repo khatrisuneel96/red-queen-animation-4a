@@ -23,8 +23,8 @@ const  Animation = () => {
             </div>
             <Palm />
             <PalmRooks />
-            <ChessPieces />
-            <ChessBackground />
+            <ChessPieces playFast={playFast} />
+            <ChessBackground playFast={playFast} />
         </div>
     )
 }
