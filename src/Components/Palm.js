@@ -3,11 +3,11 @@ import useWebAnimations from "@wellyshen/use-web-animations";
 
 function Palm() {
     return (
-        <div className="scenery" id="foreground1">
+        <div className="scenery foreground" >
             <img 
-                id="palm3" 
+                className="palm" 
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/palm3_small.png" 
-                alt="palm3" />
+                alt="palm" />
         </div>
     )
 }

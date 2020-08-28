@@ -6,12 +6,20 @@ import ChessPieces from './ChessPieces'
 import ChessBackground from './ChessBackground'
 
 
-function Animation() {
+const  Animation = () => {
+
+    const playFast = (getAnimation) => {
+        document.addEventListener('click', () => {
+            const animation = getAnimation()
+            animation && animation.updatePlaybackRate(animation.playbackRate * 1.1)
+        })
+    }
+
     return (
         <div className="container">
             <div className="sky"></div>
             <div className="earth">
-                <QueenAlice />
+                <QueenAlice playFast={playFast} />
             </div>
             <Palm />
             <PalmRooks />

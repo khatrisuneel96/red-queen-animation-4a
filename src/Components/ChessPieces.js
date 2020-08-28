@@ -5,14 +5,14 @@ function ChessPieces() {
     return (
         <div className="scenery" id="background1">
             <img 
-                id="r_pawn_upright" 
+                className="r_pawn" 
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/r_pawn_upright_small.png" alt="pawn-upright" />
             <img 
-                id="w_rook" 
+                className="w_rook" 
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/w_rook_small.png" 
                 alt="rook" />
             <img 
-                id="palm1" 
+                className="small_palm" 
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/palm1_small.png" 
                 alt="palm" />
         </div>
