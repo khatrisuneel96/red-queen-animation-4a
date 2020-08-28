@@ -8,7 +8,7 @@ import ChessBackground from './ChessBackground'
 
 const  Animation = () => {
 
-    const playFast = (getAnimation) => {
+    const speedUp = (getAnimation) => {
         document.addEventListener('click', () => {
             const animation = getAnimation()
             animation && animation.updatePlaybackRate(animation.playbackRate * 1.1)
@@ -17,14 +17,14 @@ const  Animation = () => {
 
     return (
         <div className="container">
-            <div className="sky"></div>
+            <div className="sky" />
             <div className="earth">
-                <QueenAlice playFast={playFast} />
+                <QueenAlice playFast={ speedUp } />
             </div>
-            <Palm playFast={playFast} />
-            <PalmRooks playFast={playFast} />
-            <ChessPieces playFast={playFast} />
-            <ChessBackground playFast={playFast} />
+            <Palm playFast={ speedUp } />
+            <PalmRooks playFast={ speedUp } />
+            <ChessPieces playFast={ speedUp } />
+            <ChessBackground playFast={ speedUp } />
         </div>
     )
 }
