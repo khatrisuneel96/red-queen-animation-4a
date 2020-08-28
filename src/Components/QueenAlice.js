@@ -1,4 +1,5 @@
 import React from 'react'
+import useWebAnimations from "@wellyshen/use-web-animations";
 
 function QueenAlice() {
     return (
